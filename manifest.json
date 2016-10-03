@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Timextension",
+  "version": "0.1",
+
+  "description": "Replace the New Tab page with a time display.",
+
+  "icons": {
+    "48": "images/clock48.png",
+    "128": "images/clock128.png"
+  },
+
+  "options_page": "optionstime.html",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
