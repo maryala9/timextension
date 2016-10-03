@@ -1,0 +1,13 @@
+Follow these Steps: It’s really easy to add this new extension in Chrome. 
+
+Step 1: Fork the project or clone it : [git clone 'project']
+
+Step 2: Type “chrome://extensions” in a tab to bring up the extensions page.
+
+Step 3: Once on this page, check “Developer mode” to enable loading unpacked extensions.        This will allow you to load your extension from a folder
+
+Step 4:  Finally, click “Load unpacked extension” or simply drag the “timextension” folder onto the page to load up the extension. You should immediately see the extension show up as a Browser Action with your icon in the toolbar window of the current tab.
+
+Step 5: For options 'Right click on the extension icon and click options' select the format and save it. 
+
+Step 6: Click new tab it will be activated.

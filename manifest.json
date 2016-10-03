@@ -15,5 +15,16 @@
 
   "chrome_url_overrides": {
     "newtab": "index.html"
-  }
+  },
+  "permissions": [
+    "http://quotes.rest/*"
+  ],
+
+  "content_scripts" : [
+    {
+      "matches" : ["http://quotes.rest/qod.json?category=management"],
+      "js"      : ["timextension.js"]
+    }
+
+  ]
 }
