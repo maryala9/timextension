@@ -1,6 +1,6 @@
 Follow these Steps: It’s really easy to add this new extension in Chrome. 
 
-Step 1: Fork the project or clone it : [git clone 'project']
+Step 1: Fork the project or clone it : [git clone 'project'] command-line: git clone https://github.com/maryala9/timextension.git 
 
 Step 2: Type “chrome://extensions” in a tab to bring up the extensions page.
 
