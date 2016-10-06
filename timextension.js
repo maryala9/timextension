@@ -15,23 +15,23 @@ function padTime(x) {
 		return x;
 	}
 }
-function getBackground() {
-	$.ajax({
-        url: 'http://quotes.rest/qod.json?api_key=uI4bQpfS4IWuAAq_trTEPQeF&category=management',
-        cache: false,
-        timeout: 5000,
-        success: function(data) {
-        	console.log('Response from the call',data);
-            document.getElementById('quoteval').innerHTML = data.contents.quotes[0].quote;
-            // document.body.style.backgroundImage = "url('data.contents.quotes[0].background')";
-        	$("body").css("background-image", "url("+ data.contents.quotes[0].background + ")");
-        	
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert('error ' + textStatus + " " + errorThrown);
-        }
-    });
-}
+//function getBackground() {
+//	$.ajax({
+//        url: 'http://quotes.rest/qod.json?api_key=uI4bQpfS4IWuAAq_trTEPQeF&category=management',
+//        cache: false,
+//        timeout: 5000,
+//        success: function(data) {
+//        	console.log('Response from the call',data);
+//            document.getElementById('quoteval').innerHTML = data.contents.quotes[0].quote;
+ //           // document.body.style.backgroundImage = "url('data.contents.quotes[0].background')";
+//        	//$("body").css("background-image", "url("+ data.contents.quotes[0].background + ")");
+//        	
+//        },
+//        error: function(jqXHR, textStatus, errorThrown) {
+//            alert('error ' + textStatus + " " + errorThrown);
+//        }
+//    });
+//}
 
 function updateTime() {
 	var date = new Date();
@@ -61,7 +61,7 @@ function startTempo() {
 
 	updateTime();
 
-	getBackground();
+	//getBackground();
 	setTimeout(function() {updateTime(); setInterval(updateTime, 1000)},
 		1000 - new Date().getTime() % 1000);
 }
